@@ -1,0 +1,144 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Anton", sans-serif;
+  --font-body: "Poppins", sans-serif;
+
+  --color-gold: #f4c430;
+  --color-gold-light: #ffe066;
+  --color-gold-dark: #b8860b;
+  --color-ink: #33210a;
+  --color-cream: #fff8e7;
+  --color-charcoal: #fff1d0;
+  --color-graphite: #ffe7ad;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-dark);
+  border-radius: 4px;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(90deg, #b8860b, #f4c430 50%, #b8860b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-noise {
+  background-image: radial-gradient(rgba(184, 134, 11, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+} */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-display: "Anton", sans-serif;
+  --font-body: "Poppins", sans-serif;
+
+  /* Brand Colors */
+  --color-gold: #f4c430;
+  --color-gold-light: #ffe066;
+  --color-gold-dark: #b8860b;
+
+  /* Text */
+  --color-ink: #2d1b00;
+
+  /* Background Shades */
+  --color-cream: #fff4cc;
+  --color-charcoal: #ffe8a3;
+  --color-graphite: #ffd76b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-dark);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9f7200;
+}
+
+/* Gold Gradient Text */
+.text-gradient-gold {
+  background: linear-gradient(
+    90deg,
+    #b8860b 0%,
+    #f4c430 50%,
+    #b8860b 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Premium Noise Texture */
+.bg-noise {
+  background-image: radial-gradient(
+    rgba(184, 134, 11, 0.12) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+}
