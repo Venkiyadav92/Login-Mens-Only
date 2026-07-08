@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "../assets/Logo/Login_Logo.png";
 
 const LINKS = [
   { label: "Home", href: "/#home" },
@@ -31,10 +32,15 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
-          <img
+          {/* <img
             src={"/src/assets/Logo/Login_Logo.png"}
             alt="Login Mens Only"
             className="h-16 md:h-20 w-auto"
+          /> */}
+          <img
+          src={logo}
+          alt="Login Mens Only"
+          className="h-16 md:h-20 w-auto"
           />
         </Link>
 
